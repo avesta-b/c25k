@@ -27,7 +27,7 @@ struct ExerciseInterval: Identifiable, Equatable {
 	let duration: TimeInterval
 	let id: UUID = UUID()
 
-	enum IntervalType: String {
+	enum IntervalType: String, CaseIterable {
 		case run = "Run"
 		case cooldown = "Cooldown"
 	}
